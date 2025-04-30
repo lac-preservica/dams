@@ -1,5 +1,5 @@
-function Get-LACproxy(){
-    return 'http://10.254.1.16:8080'
+SEfunction Get-LACproxy(){
+    return 'PROXY_ADDRESS'
 }
 function Trace-XmlToScreen ([xml]$xml)
 {
