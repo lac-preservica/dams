@@ -249,16 +249,16 @@ function Get-PreservicaToken{
 
     #PROD
     $postParamsProd = @{
-        username = 'maxime.champagne@canada.ca';
-        password = 'Totala10';
-        tenant   = 'lac';
+        username = 'YOUR_USER_ACCOUNT';
+        password = 'YOUR_PASSWORD';
+        tenant   = 'YOUR_TENANT_NAME';
         }
 
     #TEST
     $postParams = @{
-        username = 'maxime.champagne@bac-lac.gc.ca';
-        password = 'Totala10';
-        tenant   = 'lactest';
+        username = 'YOUR_USER_ACCOUNT';
+        password = 'YOUR_PASSWORD';
+        tenant   = 'YOUR_TENANT_NAME';
         }
 
     $result = Invoke-RestMethod -Method 'Post'  -Uri $url -body $postParams -Proxy $proxyAddress -ProxyUseDefaultCredentials;
